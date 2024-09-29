@@ -43,15 +43,16 @@ const Header = () => {
                     })}
                 </nav>
 
-                <Link className='bg-[#ffffff] text-gray-950 text-xl py-2 px-6 rounded-md'>
-                    Online Appointment
+                <Link to='/cost-calculator' className='bg-[#ffffff] text-gray-950 text-xl py-2 px-6 rounded-md'>
+                    Calculate Cost
                 </Link>
 
             </header>
+
             <header className='bg-[#004AAD] flex justify-between items-center lg:mx-24 px-5 py-5 lg:hidden'>
                 <RiMenu2Line onClick={handleOpen} size={30} className='text-white' />
-                <Link className='bg-[#ffffff] text-gray-950 text-xl py-2 px-6 rounded-md'>
-                    Online Appointment
+                <Link to='/cost-calculator' className='bg-[#ffffff] text-gray-950 text-xl py-2 px-6 rounded-md'>
+                    Calculate Cost
                 </Link>
             </header>
 

@@ -78,23 +78,23 @@ const Home = () => {
     return (
         <>
 
-            <section className='xl:mx-24 px-5 lg:px-20 flex flex-col md:flex-row h-screen md:h-[70vh] justify-center items-center relative bg-gradient-to-b from-[#3D6FB4] to-[#92BDF6] overflow-hidden'>
+            <section className='xl:mx-24 px-5 lg:px-20 flex flex-col md:flex-row h-screen md:h-[70vh] justify-center items-center relative bg-gradient-to-b from-[#c4d5ee] to-[#9fc1ec] overflow-hidden'>
 
                 <div className='flex flex-col gap-5 justify-center z-10'>
                     <div className='flex flex-col gap-5'>
-                        <p className='text-5xl md:w-[50%] font-bold text-white flex gap-3'>
+                        <p className='text-5xl md:w-[50%] font-bold flex gap-3'>
                             Welcome To El-pro Cleaning Services
                         </p>
-                        <p className='lg:text-l md:w-[40%] text-white'>
+                        <p className='lg:text-l md:w-[40%] '>
                             Our team of professional cleaners is committed to delivering a pristine and spotless environment for your home or business.
                             We understand the value of a clean space and are dedicated to meeting your specific cleaning needs.
                         </p>
 
-                        <div className='py-4 flex items-center gap-5 text-white font-semibold'>
-                            <Link to='/about'><button className='border-2 border-white px-5 py-2 rounded-md hover:bg-white hover:text-[#00369a] transition-all duration-300'>
-                                Discover More
+                        <div className='py-4 flex items-center gap-5 font-semibold'>
+                            <Link to='/cost-calculator'><button className='border-2 border-black px-5 py-2 rounded-md hover:bg-white hover:text-[#00369a] transition-all duration-300'>
+                                Calculate Cost
                             </button></Link>
-                            <Link to='/services'><button className='bg-[#00369a] px-7 py-2 rounded-md hover:bg-[#002d7d] transition-all duration-300'>
+                            <Link to='/services'><button className='bg-[#00369a] px-7 py-2 text-white rounded-md hover:bg-[#002d7d] transition-all duration-300'>
                                 Our Services
                             </button></Link>
                         </div>
@@ -133,7 +133,7 @@ const Home = () => {
             <section className='lg:mx-10 flex flex-col px-5 lg:px-24'>
 
                 <div className='text-3xl text-center md:text-5xl mt-20 mb-20 font-bold mx-auto'>
-                    Our Services Include:
+                    Our Services Include
                 </div>
 
                 <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4'>
