@@ -99,9 +99,10 @@ const Home = () => {
                             </button></Link>
                         </div>
                     </div>
+                    <img src={HeroImg} alt="" className='hidden md:block w-[90%] md:w-[85%] lg:w-[55%] absolute bottom-0 right-0' />
                 </div>
 
-                <img src={HeroImg} alt="" className='hidden md:block w-[90%] md:w-[85%] lg:w-[55%] absolute bottom-0 right-0' />
+                
 
             </section>
 
