@@ -6,29 +6,39 @@ import Footer from "./layouts/Footer"
 import About from "./pages/About"
 import ContactUs from "./pages/ContactUs"
 import Services from "./pages/Services"
+import Terms from "./pages/Terms"
+import Privacy from "./pages/Privacy"
+import CostCalculator from "./pages/CostCalculator"
+import ScrollReset from "./components/ScrollReset"
 
-  function App() {
+function App() {
 
-    return (
-      <>
+  return (
+    <>
 
-        <PageTop />
+      <ScrollReset />
 
-        <Header />
+      <PageTop />
 
-        <Routes>
+      <Header />
 
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/services" element={<Services />} />
+      <Routes>
 
-        </Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/cost-calculator" element={<CostCalculator />} />
+        <Route path="*" element={<Home />} />
 
-        <Footer />
+      </Routes>
 
-      </>
-    )
-  }
+      <Footer />
+
+    </>
+  )
+}
 
 export default App

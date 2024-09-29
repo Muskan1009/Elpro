@@ -1,16 +1,14 @@
 import React from 'react';
-import { CiClock2 } from "react-icons/ci";
-import { CiLocationOn } from "react-icons/ci";
-import { CiMail } from "react-icons/ci";
+import { CiMail, CiPhone, CiLocationOn } from "react-icons/ci";
 import Logo from '../assets/logo.jpeg';
 
 const PageTop = () => {
 
     const topData = [
         {
-            title: 'Office Time',
-            details: 'Sun - Mon 9 am - 6 pm',
-            icon: CiClock2
+            title: 'Call Us',
+            details: '(Insert phone number)',
+            icon: CiPhone
         },
         {
             title: 'Email Address',

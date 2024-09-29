@@ -219,6 +219,51 @@ const About = () => {
                 }
 
             </section>
+
+            <section className='bg-slate-100 h-max md:h-screen py-10 px-5 md:px-24 flex flex-col gap-5 justify-around'>
+                <div className='text-center'>
+                    <h2 className='text-3xl font-bold text-gray-800 mb-5'>Meet Our Team</h2>
+                    <p className='text-gray-600'>
+                        At Elpro Cleaning Services, our team is committed to providing top-notch cleaning solutions.
+                        With a focus on reliability, professionalism, and attention to detail, we ensure every space is left spotless.
+                    </p>
+                </div>
+
+                <div className='flex flex-col md:flex-row justify-between items-center gap-10 mt-10'>
+                    {/* Team Member 1 */}
+                    <div className='bg-white shadow-lg rounded-lg p-5 text-center w-full'>
+                        <img src='path-to-eldatislin-image' alt='Elda Tislin' className='w-24 h-24 rounded-full mx-auto mb-4 bg-slate-100' />
+                        <h3 className='text-xl font-semibold text-gray-700'>Elda Tislin</h3>
+                        <p className='text-gray-500'>Owner and Operator</p>
+                        <p className='text-gray-600 mt-3'>
+                            Elda Tislin is the heart and soul of Elpro Cleaning Services, ensuring every client receives the highest
+                            level of service. With her leadership, we meet the highest standards in cleaning.
+                        </p>
+                    </div>
+
+                    {/* Team Member 2 - Professional Cleaners */}
+                    <div className='bg-white shadow-lg rounded-lg p-5 text-center w-full'>
+                        <img src='path-to-cleaners-image' alt='Professional Cleaners' className='w-24 h-24 rounded-full mx-auto mb-4 bg-slate-100' />
+                        <h3 className='text-xl font-semibold text-gray-700'>Our Professional Cleaners</h3>
+                        <p className='text-gray-500'>Experienced & Trained</p>
+                        <p className='text-gray-600 mt-3'>
+                            Our team of cleaners is well-trained and uses eco-friendly products to keep your space clean and safe.
+                            Each member is handpicked for their reliability and attention to detail.
+                        </p>
+                    </div>
+                </div>
+
+                <div className='text-center mt-10'>
+                    <h3 className='text-2xl font-bold text-gray-800 mb-5'>Why Choose Our Team?</h3>
+                    <ul className='text-gray-600 list-disc list-inside'>
+                        <li>Expertise and experience in residential and commercial cleaning.</li>
+                        <li>Eco-friendly cleaning products for a healthier environment.</li>
+                        <li>Customer-focused approach, ensuring your needs are always prioritized.</li>
+                        <li>Fully insured and bonded for your peace of mind.</li>
+                    </ul>
+                </div>
+            </section>
+
         </>
     )
 }
