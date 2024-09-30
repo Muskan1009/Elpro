@@ -30,19 +30,23 @@ const Footer = () => {
             links: [
                 {
                     name: 'Facebook',
-                    link: 'https://www.facebook.com'
+                    link: 'https://www.facebook.com/elprocleaningservices'
                 },
                 {
                     name: 'Instagram',
-                    link: 'https://www.instagram.com'
+                    link: 'https://www.instagram.com/elprocleaningservicesllc/'
                 },
                 {
-                    name: 'Twitter',
-                    link: 'https://www.twitter.com'
+                    name: 'Yelp',
+                    link: 'https://www.yelp.com/biz/el-pro-cleaning-services-laurelton-2'
                 },
                 {
                     name: 'LinkedIn',
-                    link: 'https://www.linkedin.com'
+                    link: 'https://www.linkedin.com/company/el-pro-cleaning-services/'
+                },
+                {
+                    name:'Mapquest',
+                    link:'https://www.mapquest.com/us/new-york/el-pro-cleaning-services-453963906'
                 }
             ]
         },

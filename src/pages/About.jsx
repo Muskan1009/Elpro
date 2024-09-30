@@ -112,7 +112,7 @@ const About = () => {
 
                 <img className='h-full w-full object-cover brightness-50' src={BgImg} alt="" />
                 <div className='flex flex-col w-screen text-white absolute items-left py-5 px-5 md:px-10 xl:px-36'>
-                    <div className='text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold lg:w-[50%]'>About Elpro Cleaning Services</div>
+                    <div className='text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold lg:w-[50%]'>About El-Pro Cleaning Services LLC</div>
                     <div className='font-normal lg:w-[30%] py-4'>Our mission is simple – to provide high-quality cleaning services that enhance the
                         comfort and productivity of our clients.
                         With years of experience, we know how to tackle the toughest cleaning jobs, ensuring your home or business looks spotless every time.

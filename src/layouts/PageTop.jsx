@@ -7,7 +7,7 @@ const PageTop = () => {
     const topData = [
         {
             title: 'Call Us',
-            details: '(Insert phone number)',
+            details: '(347) 432-7457',
             icon: CiPhone
         },
         {
