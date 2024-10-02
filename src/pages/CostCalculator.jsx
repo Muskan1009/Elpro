@@ -24,7 +24,7 @@ const CostCalculator = () => {
     }
 
     return (
-        <section className='xl:mx-24 px-5 lg:px-20 py-20 flex flex-col h-max justify-center items-center overflow-hidden'>
+        <section className=' px-5 lg:px-20 py-20 flex flex-col h-max justify-center items-center overflow-hidden'>
             <form method='POST' className='flex flex-col gap-4 md:w-1/2'>
 
                 <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8">Cost Calculator</h1>

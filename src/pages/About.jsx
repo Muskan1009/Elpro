@@ -108,7 +108,7 @@ const About = () => {
 
     return (
         <>
-            <section className='flex h-[50vh] md:h-[60vh] relative justify-center items-center xl:mx-24 overflow-hidden'>
+            <section className='flex h-[50vh] md:h-[60vh] relative justify-center items-center  overflow-hidden'>
 
                 <img className='h-full w-full object-cover brightness-50' src={BgImg} alt="" />
                 <div className='flex flex-col w-screen text-white absolute items-left py-5 px-5 md:px-10 xl:px-36'>
@@ -200,7 +200,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className='px-5 md:px-24 py-10 md:py-20 bg-gradient-to-t from-[#92BDF6] to-[#3D6FB4] text-white font-semibold text-lg'>
+            <section id='faqs' className='px-5 md:px-24 py-10 md:py-20 bg-gradient-to-t from-[#92BDF6] to-[#3D6FB4] text-white font-semibold text-lg'>
 
                 <div className='flex flex-col items-center gap-2 pb-8'>
                     <div className='font-bold text-4xl'>FAQs</div>
@@ -243,7 +243,7 @@ const About = () => {
 
                     {/* Team Member 2 - Professional Cleaners */}
                     <div className='bg-white shadow-lg rounded-lg p-5 text-center w-full'>
-                        <img src='path-to-cleaners-image' alt='Professional Cleaners' className='w-24 h-24 rounded-full mx-auto mb-4 bg-slate-100' />
+                        <img src='https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg' alt='Professional Cleaners' className='w-24 h-24 rounded-full mx-auto mb-4 bg-slate-100' />
                         <h3 className='text-xl font-semibold text-gray-700'>Our Professional Cleaners</h3>
                         <p className='text-gray-500'>Experienced & Trained</p>
                         <p className='text-gray-600 mt-3'>

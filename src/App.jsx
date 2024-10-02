@@ -10,6 +10,8 @@ import Terms from "./pages/Terms"
 import Privacy from "./pages/Privacy"
 import CostCalculator from "./pages/CostCalculator"
 import ScrollReset from "./components/ScrollReset"
+import Blogs from "./pages/Blogs"
+import BlogPost from "./pages/BlogPost"
 
 function App() {
 
@@ -31,6 +33,10 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/cost-calculator" element={<CostCalculator />} />
+
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:blogId" element={<BlogPost />} />
+
         <Route path="*" element={<Home />} />
 
       </Routes>
