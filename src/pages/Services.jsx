@@ -120,7 +120,7 @@ const Services = () => {
 
     return (
         <>
-            <section className='flex h-[50vh] md:h-[60vh] relative justify-center items-center xl:mx-24 overflow-hidden'>
+            <section className='flex h-[50vh] md:h-[60vh] relative justify-center items-center  overflow-hidden'>
 
                 <img className='h-full w-full object-cover brightness-50' src={Servimg} alt="" />
                 <div className='flex flex-col w-screen text-white absolute items-left py-5 px-5 md:px-10 xl:px-36'>

@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import { RiMenu2Line } from "react-icons/ri";
 import { Modal } from '@mui/material';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Header = () => {
 
@@ -22,6 +23,10 @@ const Header = () => {
         {
             name: 'Contact Us',
             link: '/contact'
+        },
+        {
+            name: 'Blogs',
+            link: '/blogs'
         }
     ]
 
@@ -31,7 +36,7 @@ const Header = () => {
 
     return (
         <>
-            <header className='bg-[#00369a] lg:flex justify-between items-center xl:mx-24 px-20 py-5 hidden'>
+            <header className='bg-[#00369a] lg:flex justify-between items-center  px-20 py-5 hidden'>
 
                 <nav className='flex gap-5 text-xl text-white'>
                     {navLinks.map((data, index) => {
@@ -41,6 +46,13 @@ const Header = () => {
                             </NavLink>
                         )
                     })}
+                    <NavHashLink
+                        smooth // Enable smooth scrolling
+                        className={({ isActive }) => isActive ? 'font-medium' : ''}
+                        to='/about#faqs'
+                    >
+                        FAQs
+                    </NavHashLink>
                 </nav>
 
                 <Link to='/cost-calculator' className='bg-[#ffffff] text-gray-950 text-xl py-2 px-6 rounded-md'>
@@ -49,7 +61,7 @@ const Header = () => {
 
             </header>
 
-            <header className='bg-[#004AAD] flex justify-between items-center lg:mx-24 px-5 py-5 lg:hidden'>
+            <header className='bg-[#004AAD] flex justify-between items-center px-5 py-5 lg:hidden'>
                 <RiMenu2Line onClick={handleOpen} size={30} className='text-white' />
                 <Link to='/cost-calculator' className='bg-[#ffffff] text-gray-950 text-xl py-2 px-6 rounded-md'>
                     Calculate Cost
@@ -70,6 +82,13 @@ const Header = () => {
                                 </NavLink>
                             )
                         })}
+                        <NavHashLink
+                            smooth // Enable smooth scrolling
+                            className={({ isActive }) => isActive ? 'font-medium' : ''}
+                            to='/about#faqs'
+                        >
+                            FAQs
+                        </NavHashLink>
                     </nav>
                 </div>
             </Modal>

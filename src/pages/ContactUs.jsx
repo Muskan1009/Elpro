@@ -27,7 +27,7 @@ const ContactUs = () => {
     return (
         <>
             {/* Hero Section */}
-            <section className='flex h-[50vh] md:h-[60vh] relative justify-center items-center xl:mx-24'>
+            <section className='flex h-[50vh] md:h-[60vh] relative justify-center items-center '>
                 <img className='h-full w-full object-cover brightness-50' src={BgImg} alt="Background" />
                 <div className='absolute inset-0 flex items-center justify-center'>
                     <h1 className='text-white text-4xl lg:text-6xl font-bold'>Contact Us</h1>
@@ -35,10 +35,11 @@ const ContactUs = () => {
             </section>
 
             <section className='bg-gray-50 py-16 px-5 lg:px-24'>
-                <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-5'>
+
+                <div className='flex flex-col lg:flex-row gap-10 px-5 w-full'>
 
                     {/* Form Section */}
-                    <div className='bg-white p-5 shadow-md rounded-lg'>
+                    <div className='bg-white p-5 shadow-md rounded-lg w-full'>
                         <h2 className='text-3xl font-semibold mb-6 text-center'>Get in Touch</h2>
                         <form className='flex flex-col gap-6'>
                             <input type="text" className='border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500' placeholder='Full Name' required />
@@ -59,8 +60,8 @@ const ContactUs = () => {
                     </div>
 
                     {/* Image Section */}
-                    <div className='hidden lg:block'>
-                        <img src={ContImg} alt="Contact Illustration" className='w-full h-full object-cover rounded-lg shadow-md' />
+                    <div className='rounded-lg shadow-md w-full'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4418879043296!2d-73.7487295!3d40.66423160000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26723ecd6615b%3A0xf9d5f6d9a23d8f97!2sEl-Pro%20Cleaning%20Services%20LLC!5e0!3m2!1sen!2sin!4v1727906736475!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='rounded-lg h-[40vh] lg:h-full w-full'></iframe>
                     </div>
                 </div>
             </section>

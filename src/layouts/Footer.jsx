@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link';
 
 const Footer = () => {
 
@@ -22,6 +23,14 @@ const Footer = () => {
                 {
                     name: 'Contact Us',
                     link: '/contact'
+                },
+                {
+                    name: 'Blogs',
+                    link: '/blogs'
+                },
+                {
+                    name: 'FAQs',
+                    link: '/about#faqs'
                 }
             ]
         },
@@ -30,19 +39,23 @@ const Footer = () => {
             links: [
                 {
                     name: 'Facebook',
-                    link: 'https://www.facebook.com'
+                    link: 'https://www.facebook.com/elprocleaningservices'
                 },
                 {
                     name: 'Instagram',
-                    link: 'https://www.instagram.com'
+                    link: 'https://www.instagram.com/elprocleaningservicesllc/'
                 },
                 {
-                    name: 'Twitter',
-                    link: 'https://www.twitter.com'
+                    name: 'Yelp',
+                    link: 'https://www.yelp.com/biz/el-pro-cleaning-services-laurelton-2'
                 },
                 {
                     name: 'LinkedIn',
-                    link: 'https://www.linkedin.com'
+                    link: 'https://www.linkedin.com/company/el-pro-cleaning-services/'
+                },
+                {
+                    name: 'Mapquest',
+                    link: 'https://www.mapquest.com/us/new-york/el-pro-cleaning-services-453963906'
                 }
             ]
         },
@@ -72,11 +85,16 @@ const Footer = () => {
                                 <h4 className='font-medium mb-5'>{data.title}</h4>
                                 <nav className='flex flex-col gap-2'>
                                     {data.links.map((link, index) => {
-                                        return (
+                                        return (link.name === 'FAQs' ? (
+                                            <NavHashLink to={link.link} key={index}>
+                                                {link.name}
+                                            </NavHashLink>
+                                        ) : (
                                             <Link to={link.link} key={index} className=' hover:underline opacity-80 hover:opacity-100 duration-300 text-lg'>
                                                 {link.name}
                                             </Link>
-                                        )
+                                        ))
+
                                     })}
                                 </nav>
                             </div>

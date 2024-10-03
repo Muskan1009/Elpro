@@ -78,8 +78,8 @@ const Home = () => {
     return (
         <>
 
-            <section className='xl:mx-24 px-5 lg:px-20 flex flex-col md:flex-row h-screen md:h-[70vh] justify-center items-center relative bg-gradient-to-b from-[#c4d5ee] to-[#9fc1ec] overflow-hidden'>
-
+            <section className=' px-5 lg:px-20 flex flex-col md:flex-row h-screen md:h-[80vh] justify-center items-center relative bg-gradient-to-b from-[#c4d5ee] to-[#9fc1ec] overflow-hidden'>
+        
                 <div className='flex flex-col gap-5 justify-center z-10'>
                     <div className='flex flex-col gap-5'>
                         <p className='text-5xl md:w-[50%] font-bold flex gap-3'>
