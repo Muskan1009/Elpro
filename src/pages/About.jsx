@@ -19,6 +19,8 @@ import { FaTasks } from "react-icons/fa";
 
 import BgImg from '../assets/about.jpg'
 
+import Owner from '../assets/owner.jpg'
+
 const About = () => {
 
     const servicesData = [
@@ -232,7 +234,7 @@ const About = () => {
                 <div className='flex flex-col md:flex-row justify-between items-center gap-10 mt-10'>
                     {/* Team Member 1 */}
                     <div className='bg-white shadow-lg rounded-lg p-5 text-center w-full'>
-                        <img src='path-to-eldatislin-image' alt='Elda Tislin' className='w-24 h-24 rounded-full mx-auto mb-4 bg-slate-100' />
+                        <img src={Owner} alt='Elda Tislin' className='w-24 h-24 rounded-full mx-auto mb-4 bg-slate-100' />
                         <h3 className='text-xl font-semibold text-gray-700'>Elda Tislin</h3>
                         <p className='text-gray-500'>Owner and Operator</p>
                         <p className='text-gray-600 mt-3'>
