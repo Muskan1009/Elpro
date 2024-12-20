@@ -18,6 +18,7 @@ import Serv7 from '../assets/serv7.jpg'
 import { Link } from 'react-router-dom';
 
 import ContactForm from '../components/ContactForm';
+import { Helmet } from "react-helmet";
 
 const Home = () => {
 
@@ -77,7 +78,19 @@ const Home = () => {
 
     return (
         <>
-
+        <Helmet>
+        <title>Elpro Cleaning Services | Professional Cleaning Solutions</title>
+        <meta
+          name="description"
+          content="Elpro Cleaning Services offers top-notch residential and commercial cleaning solutions tailored to your needs. Contact us for a spotless environment."
+        />
+        <meta
+          name="keywords"
+          content="Elpro, ElproCleaningServices, cleaning services near me, professional home cleaners, affordable commercial cleaning, deep cleaning experts, reliable cleaning company, cleaning services, residential cleaning, commercial cleaning, professional cleaners, ONJ Cleaning Services"
+        />
+        <meta name="author" content="Elpro Cleaning Services" />
+        <meta name="robots" content="index, follow" />
+        </Helmet>
             <section className=' px-5 lg:px-20 flex flex-col md:flex-row h-screen md:h-[80vh] justify-center items-center relative bg-gradient-to-b from-[#c4d5ee] to-[#9fc1ec] overflow-hidden'>
         
                 <div className='flex flex-col gap-5 justify-center z-10'>

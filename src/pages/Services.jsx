@@ -40,7 +40,7 @@ const ServiceCard = ({ data }) => {
     };
 
     return (
-        <div className='flex flex-col gap-3 bg-[#EAF3FD] p-5 rounded-lg justify-between'>
+        <div className='flex flex-col gap-3 bg-gray-200 p-5 rounded-lg justify-between'>
             <div className='flex flex-col gap-3'>
                 <img src={data.img} alt="" className='w-full h-72 object-cover rounded-lg' />
                 <h4 className='font-bold text-center text-xl'>{data.title}</h4>
